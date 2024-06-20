@@ -53,11 +53,12 @@ const SomeHotels = () => {
             paddingBottom: "15px",
             marginTop: "-15px",
             color: "black",
-            border: "1px solid #7f8082",
-            width: "100px",
-            borderBottom: "none",
-            height: "33px",
+            width: "200px",
+            height: "40px",
             margin: "auto",
+            borderRadius: "20px",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+            background: "linear-gradient(45deg, #fe5d5d, #fc8c8c)"
           }}
         >
           <Select
@@ -72,16 +73,26 @@ const SomeHotels = () => {
                 .localeCompare(optionB.children.toLowerCase())
             }
             defaultValue="FILTER"
-            style={{ border: "none", width: "100px", cursor: "pointer" }}
+            style={{
+              border: "none",
+              width: "100%",
+              borderRadius: "20px",
+              cursor: "pointer",
+              color: "white",
+              fontSize: "16px",
+              fontWeight: "bold",
+              padding: "5px 10px"
+            }}
+            dropdownStyle={{ borderRadius: "10px", fontSize: "16px" }}
           >
-            <Option value="Ghaziabad">Ghaziabad</Option>
-            <Option value="Delhi">Delhi</Option>
-            <Option value="Mumbai">Mumbai</Option>
-            <Option value="Varanasi">Varanasi</Option>
-            <Option value="Kolkata">Kolkata</Option>
-            <Option value="Kashmir">Kashmir</Option>
-            <Option value="Rajasthan">Rajasthan</Option>
-            <Option value="Hyderabad">Hyderabad</Option>
+            <Option value="Ghaziabad" style={{ color: "#333" }}>Ghaziabad</Option>
+            <Option value="Delhi" style={{ color: "#333" }}>Delhi</Option>
+            <Option value="Mumbai" style={{ color: "#333" }}>Mumbai</Option>
+            <Option value="Varanasi" style={{ color: "#333" }}>Varanasi</Option>
+            <Option value="Kolkata" style={{ color: "#333" }}>Kolkata</Option>
+            <Option value="Kashmir" style={{ color: "#333" }}>Kashmir</Option>
+            <Option value="Rajasthan" style={{ color: "#333" }}>Rajasthan</Option>
+            <Option value="Hyderabad" style={{ color: "#333" }}>Hyderabad</Option>
           </Select>
         </div>
 

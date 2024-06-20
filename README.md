@@ -3,7 +3,9 @@ A Complete (Full Stack) MERN BOOKING Project
 
 ###
 
-<img src="https://res.cloudinary.com/dzghsspe7/image/upload/v1662156277/booking/jbmnvzggbu9orngvbx0r.png" alt="Moto-Repair" border="0" />
+https://github.com/Abhinavchad/Booking-hotel-system/assets/117558355/b4ce5fe6-f648-4774-9eb5-5f40295c406a
+
+
 
 ### About This Site:
 

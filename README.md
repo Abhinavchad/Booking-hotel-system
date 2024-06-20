@@ -1,6 +1,5 @@
 # BOOKING_HOTEL
 A Complete (Full Stack) MERN BOOKING Project
-### [Dream Hotel Booking](https://dreambooking.netlify.app)
 
 ###
 

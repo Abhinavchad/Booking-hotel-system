@@ -3,18 +3,18 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { GET_HOTELS } from "../../Api/ApiConstant";
 import { getData } from "../../Api/commonServices";
-import  gofLoader  from "../../assets/project-idea.gif";
+import gofLoader from "../../assets/project-idea.gif";
 const { Option } = Select;
 const SomeHotels = () => {
   const [hotels, setHotels] = useState([]);
-  const [citys, setCitys] = useState("dhaka");
+  const [citys, setCitys] = useState("Ghaziabad");
 
   // GET_ROOMS
   useEffect(() => {
     const getPost = async () => {
       try {
         const { data } = await getData(GET_HOTELS, {
-          city: citys
+          city: citys,
         });
         setHotels(data.hotels.allHotels);
       } catch (err) {
@@ -57,7 +57,7 @@ const SomeHotels = () => {
             width: "100px",
             borderBottom: "none",
             height: "33px",
-            margin: "auto"
+            margin: "auto",
           }}
         >
           <Select
@@ -74,14 +74,14 @@ const SomeHotels = () => {
             defaultValue="FILTER"
             style={{ border: "none", width: "100px", cursor: "pointer" }}
           >
-            <Option value="dhaka">Dhaka</Option>
-            <Option value="chittagong">Chittagong</Option>
-            <Option value="rajshahi">Rajshahi</Option>
-            <Option value="khulna">Khulna</Option>
-            <Option value="sylhet">Sylhet</Option>
-            <Option value="rangpur">Rangpur</Option>
-            <Option value="mymensingh">Mymensingh</Option>
-            <Option value="barisal">Barisal</Option>
+            <Option value="Ghaziabad">Ghaziabad</Option>
+            <Option value="Delhi">Delhi</Option>
+            <Option value="Mumbai">Mumbai</Option>
+            <Option value="Varanasi">Varanasi</Option>
+            <Option value="Kolkata">Kolkata</Option>
+            <Option value="Kashmir">Kashmir</Option>
+            <Option value="Rajasthan">Rajasthan</Option>
+            <Option value="Hyderabad">Hyderabad</Option>
           </Select>
         </div>
 
@@ -89,7 +89,7 @@ const SomeHotels = () => {
           <Row gutter={[14, 14]}>
             {hotels.length < 1 && (
               <div style={{ width: "400px", margin: "auto" }}>
-                <img src={gofLoader} alt="" style={{maxWidth:"100%"}}/>
+                <img src={gofLoader} alt="" style={{ maxWidth: "100%" }} />
               </div>
             )}
             {hotels.slice(0, 4)?.map(({ _id, name, photo, city }) => (
@@ -105,7 +105,7 @@ const SomeHotels = () => {
                     style={{
                       width: "100%",
                       height: "200px",
-                      objectFit: "cover"
+                      objectFit: "cover",
                     }}
                     src={photo}
                     alt=""

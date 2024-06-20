@@ -213,14 +213,14 @@ const Header = () => {
                       .localeCompare(optionB.children.toLowerCase())
                   }
                 >
-                  <Option value="dhaka">Dhaka</Option>
-                  <Option value="chittagong">Chittagong</Option>
-                  <Option value="rajshahi">Rajshahi</Option>
-                  <Option value="khulna">Khulna</Option>
-                  <Option value="sylhet">Sylhet</Option>
-                  <Option value="rangpur">Rangpur</Option>
-                  <Option value="mymensingh">Mymensingh</Option>
-                  <Option value="barisal">Barisal</Option>
+                  <Option value="Ghaziabad">Ghaziabad</Option>
+                  <Option value="Delhi">Delhi</Option>
+                  <Option value="Mumbai">Mumbai</Option>
+                  <Option value="Varanasi">Varanasi</Option>
+                  <Option value="Kolkata">Kolkata</Option>
+                  <Option value="Kashmir">Kashmir</Option>
+                  <Option value="Rajasthan">Rajasthan</Option>
+                  <Option value="Hyderabad">Hyderabad</Option>
                 </Select>
               </Form.Item>
               <Form.Item

@@ -12,14 +12,14 @@ import './City.css'
 import { useNavigate } from "react-router-dom";
 const Citys = () => {
   const citys = [
-    { id: 1, image: dhaka, name: "Dhaka", properties: 10 },
-    { id: 2, image: Chittagong, name: "Chittagong", properties: 90 },
-    { id: 3, image: Rajshahi, name: "Rajshahi", properties: 70 },
-    { id: 4, image: Khulna, name: "Khulna", properties: 10 },
-    { id: 5, image: sylhet, name: "Sylhet", properties: 60 },
-    { id: 6, image: rangpur, name: "Rangpur", properties: 70 },
-    { id: 7, image: maymnsing, name: "Mymensingh", properties: 10 },
-    { id: 8, image: borisal, name: "Barisal", properties: 20 }
+    { id: 1, image: dhaka, name: "Ghaziabad", properties: 10 },
+    { id: 2, image: Chittagong, name: "Delhi", properties: 90 },
+    { id: 3, image: Rajshahi, name: "Mumbai", properties: 70 },
+    { id: 4, image: Khulna, name: "Varanasi", properties: 10 },
+    { id: 5, image: sylhet, name: "Kolkata", properties: 60 },
+    { id: 6, image: rangpur, name: "Kashmir", properties: 70 },
+    { id: 7, image: maymnsing, name: "Rajasthan", properties: 10 },
+    { id: 8, image: borisal, name: "Hyderabad", properties: 20 }
   ];
 
     const navigate= useNavigate()
